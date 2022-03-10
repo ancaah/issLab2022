@@ -1,13 +1,9 @@
 INDEX VERSION 1.131+/home/daniel/uni/idss/mydir/issLab2022/.metadata/.plugins/org.eclipse.jdt.core
-3768875440.index
-1628687906.index
 4099525063.index
-3539432263.index
-2253745042.index
+3768875440.index
 1255737697.index
 1300366186.index
 4060205877.index
-3485262699.index
 2540607589.index
 2103241724.index
 3761052618.index
@@ -15,22 +11,9 @@ INDEX VERSION 1.131+/home/daniel/uni/idss/mydir/issLab2022/.metadata/.plugins/or
 976471385.index
 1216457802.index
 2049541248.index
-1159935248.index
-502732891.index
-821608291.index
 1172276510.index
 3239149482.index
-3883508318.index
 3039371698.index
-1089239932.index
-813341167.index
-2744878784.index
-3512161136.index
-3066711521.index
-2359322674.index
-925982370.index
-3530540584.index
-246264339.index
 3135415040.index
 1865797976.index
 3064120413.index
