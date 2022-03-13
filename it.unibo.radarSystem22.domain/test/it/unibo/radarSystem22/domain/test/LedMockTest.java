@@ -1,4 +1,4 @@
-package it.unibo.radarSystem22.domain;
+package it.unibo.radarSystem22.domain.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
