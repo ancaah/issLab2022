@@ -21,6 +21,7 @@ public class TestLed
 
 	@Test
 	public void testLedMock() {
+		System.out.println("testLedMock");
 		DomainSystemConfig.simulation = true;
 
 		ILed led = DeviceFactory.createLed();
@@ -37,6 +38,7 @@ public class TestLed
 
 	@Test
 	public void testLedConcrete() {
+		System.out.println("testLedConcrete");
 		DomainSystemConfig.simulation = false;
 		
 		ILed led = DeviceFactory.createLed();
@@ -53,8 +55,8 @@ public class TestLed
 	
 	@Test
 	public void testLedMockOn() {
-		System.out.println("testLedMock");
-		//DomainSystemConfig.simulation = true;
+		System.out.println("testLedMockOn");
+		DomainSystemConfig.simulation = true;
 
 		ILed led = new LedMock();
 		assertTrue(! led.getState());
@@ -65,12 +67,13 @@ public class TestLed
 
 	@Test
 	public void testLedMockOff() {
-		System.out.println("testLedMockOn");
-		//DomainSystemConfig.simulation = true;
+		System.out.println("testLedMockOff");
+		DomainSystemConfig.simulation = true;
 
 		ILed led = new LedMock();
 		assertTrue(! led.getState());
 
+		led.turnOn();
 		led.turnOff();
 		assertTrue(! led.getState());
 	}
