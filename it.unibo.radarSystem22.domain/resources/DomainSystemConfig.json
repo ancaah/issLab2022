@@ -1,5 +1,6 @@
 {
 	"simulation"    : true,
 	"tracing"       : false,
-	"DLIMIT"		: 15
+	"DLIMIT"		: 15,
+	"ledGui"		: true
 }

@@ -9,17 +9,17 @@ import org.json.JSONTokener;
 
 public class DomainSystemConfig {
 	public static  boolean simulation    = true;
-	// 	public static  boolean ledGui        = false;
-	//	public static  boolean webCam        = false;
-	// 
-	//	public static int sonarDelay          =  100;     
-	//	public static int sonarDistanceMax    =  150;     
-	//	public static boolean sonarObservable =  false;     
+	public static  boolean ledGui        = false;
+	public static  boolean webCam        = false;
+
+	public static int sonarDelay          =  100;     
+	public static int sonarDistanceMax    =  150;     
+	public static boolean sonarObservable =  false;     
 	public static int DLIMIT              =  15;     
-	//	public static int testingDistance     =  DLIMIT - 2;     
+	public static int testingDistance     =  DLIMIT - 2;     
 	//    
 	public static boolean tracing         = false;	
-	//	public static boolean testing         = false;			
+	public static boolean testing         = false;			
 
 
 	public static void setTheConfiguration(  ) {
@@ -40,14 +40,15 @@ public class DomainSystemConfig {
 			simulation          = object.getBoolean("simulation");
 
 
-//			webCam           = object.getBoolean("webCam");
-//
-//			sonarObservable  = object.getBoolean("sonarObservable");	
-//			sonarDelay       = object.getInt("sonarDelay");	
-//			sonarDistanceMax = object.getInt("sonarDistanceMax");	
+			//			webCam           = object.getBoolean("webCam");
+			//
+			//			sonarObservable  = object.getBoolean("sonarObservable");	
+			//			sonarDelay       = object.getInt("sonarDelay");	
+			//			sonarDistanceMax = object.getInt("sonarDistanceMax");	
 			DLIMIT           = object.getInt("DLIMIT");	
 			tracing          = object.getBoolean("tracing");
-//			testing          = object.getBoolean("testing");
+			//			testing          = object.getBoolean("testing");
+			ledGui 			= object.getBoolean("ledGui");
 
 
 		} catch (FileNotFoundException e) {
