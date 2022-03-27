@@ -9,6 +9,7 @@ import java.io.Reader;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
+import it.unibo.comm2022.ProtocolType;
 import it.unibo.radarSystem22.domain.utils.ColorsOut;
 
 
@@ -25,6 +26,7 @@ public class RadarSystemConfig {
 //Aggiunte dello SPRINT2a 	
 	public static int ledPort             = 8010;
 	public static int sonarPort           = 8015;
+	public static ProtocolType protocolType= ProtocolType.tcp;
  	
 	
 	
@@ -33,7 +35,7 @@ public class RadarSystemConfig {
 	}
 	
 	public static void setTheConfiguration( String resourceName ) {
-		//Nella distribuzione resourceName è in una dir che include la bin  
+		//Nella distribuzione resourceName ï¿½ in una dir che include la bin  
 		FileInputStream fis = null;
 		try {
 			ColorsOut.out("%%% setTheConfiguration from file:" + resourceName);
@@ -56,7 +58,7 @@ public class RadarSystemConfig {
 //Aggiunte dello SPRINT2a
 	        ledPort         = object.getInt("ledPort");
 	        sonarPort       = object.getInt("sonarPort");
-	        
+	        protocolType	= ProtocolType.valueOf(object.getString("protocolType"));
 		} catch (FileNotFoundException e) {
  			ColorsOut.outerr("setTheConfiguration ERROR " + e.getMessage() );
 		}
