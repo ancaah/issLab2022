@@ -44,12 +44,12 @@ public class RadarSysSprint3ControllerOnPcMain implements IApplication{
 		DomainSystemConfig.testing      	= false;			
 		DomainSystemConfig.sonarDelay       = 200;
 		//Su PC
-		DomainSystemConfig.simulation   	= false;
+		DomainSystemConfig.simulation   	= true;
 		
 		RadarSystemConfig.DLIMIT      		= 70;  
 		RadarSystemConfig.RadarGuiRemote    = false;		
-		RadarSystemConfig.raspAddr          = "192.168.1.132";		 	
-		RadarSystemConfig.protocolType       = ProtocolType.udp;	
+		RadarSystemConfig.raspAddr          = "localhost"; //"192.168.1.132";		 	
+		RadarSystemConfig.protocolType       = ProtocolType.tcp;	
 		
 		CommSystemConfig.tracing            = false;
 	}

@@ -43,15 +43,16 @@ public class RadarSysSprint3DevicesOnRaspMain implements IApplication{
 			RadarSystemConfig.setTheConfiguration(systemConfig);
 		}
 		if( domainConfig == null && systemConfig == null) {
-			DomainSystemConfig.simulation  = false;
+			DomainSystemConfig.simulation  = true;
 	    	DomainSystemConfig.testing     = false;			
 	    	DomainSystemConfig.tracing     = false;			
 			DomainSystemConfig.sonarDelay  = 200;
-	    	DomainSystemConfig.ledGui      = false;		//se siamo su PC	
+	    	DomainSystemConfig.ledGui      = true;		//se siamo su PC	
 	
 			RadarSystemConfig.tracing           = false;		
 			RadarSystemConfig.RadarGuiRemote    = true;		
-			RadarSystemConfig.protocolType      = ProtocolType.tcp;		
+			RadarSystemConfig.protocolType      = ProtocolType.udp;	
+			//RadarSystemConfig.hostAddr			= "localhost";
 			RadarSystemConfig.ledPort           = 8010;		
 			RadarSystemConfig.sonarPort         = 8015;
 		}
